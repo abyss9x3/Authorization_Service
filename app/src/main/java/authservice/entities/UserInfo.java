@@ -36,6 +36,7 @@ public class UserInfo {
 
     private String password;
 
+    //many to many
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "users_roles",
